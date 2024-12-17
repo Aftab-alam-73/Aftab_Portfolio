@@ -9,6 +9,7 @@ import { Card } from "@/components/Card";
 import mySchedulerrLandingPage from "@/assets/images/my-schedulerr.png";
 import mirrorTube from "@/assets/images/mirrortube.png";
 import bookMyFlight from "@/assets/images/bookmyflight.png";
+import tabBlock from "@/assets/images/tabblock.png";
 
 const portfolioProjects = [
   {
@@ -67,6 +68,25 @@ const portfolioProjects = [
     link1: " https://my-schedulerr.vercel.app/",
     link2:"https://github.com/Aftab-alam-73/Event_Scheduler",
     image: mySchedulerrLandingPage,
+  },
+  {
+    company: "Personal Paroject",
+    year: "2024",
+    title: "TabBlock",
+    results: [
+      { title: "Secure Authentication: Google login integration using Firebase ensures safe and seamless user access." },
+      {
+        title:
+          "Real-Time Conflict Handling: Detects and resolves conflicts when the same app is accessed in multiple tabs using Socket.IO.",
+      },
+      {
+        title:
+           "Activity Logging: Logs user actions like app selection and conflicts for monitoring."
+      }
+    ],
+    link1: " https://zingy-piroshki-d17470.netlify.app/",
+    link2:"https://github.com/Aftab-alam-73/TabBlock",
+    image: tabBlock,
   },
 
   // {
