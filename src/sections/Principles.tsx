@@ -5,7 +5,7 @@ import { Fragment } from "react";
 const principles = [
   {
     title: "Design for Scale First",
-    text: "I think about horizontal scaling, statelessness, and data partitioning before the first line of code — so systems grow without rewrites.",
+    text: "I think about horizontal scaling, statelessness, and data modeling early, so the system can grow without painful rewrites.",
   },
   {
     title: "Event-Driven by Default",
@@ -13,7 +13,7 @@ const principles = [
   },
   {
     title: "Real-time, Low-Latency",
-    text: "WebSockets plus Redis pub/sub keep thousands of concurrent clients in sync across multiple server instances at <120ms p99.",
+    text: "WebSockets plus Redis pub/sub keep many concurrent clients in sync across multiple server instances.",
   },
   {
     title: "Consistency Under Concurrency",

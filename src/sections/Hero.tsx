@@ -114,7 +114,7 @@ export const HeroSection = () => {
               <div className=" absolute bg-green-500 inset-0 rounded-full animate-ping-large"></div>
             </div>
             <div className="text-sm font-medium ">
-              Open to Full-Stack / Backend roles
+              Open to Full-Stack / Backend roles &middot; Available immediately
             </div>
           </div>
         </div>
@@ -123,10 +123,11 @@ export const HeroSection = () => {
             Full-Stack Developer, Backend at Heart
           </h1>
           <p className="mt-4 text-center  text-white/60 md:text-lg">
-          I&#39;m a full-stack developer with 3 years of experience, most at home in backend
-          engineering &mdash; designing high-concurrency, event-driven systems. I&#39;ve been the
-          sole/lead backend owner of multiple production platforms serving thousands of concurrent
-          users, and I&#39;m equally comfortable across the stack with React and Next.js.
+            I&#39;m a full-stack developer with 3+ years of experience, most at
+            home in backend engineering. At SDLC Corp I led 4 real-time gaming
+            and social platforms end to end, as the sole backend developer on 3
+            of them, and delivered 3. I&#39;m comfortable across the stack with
+            React and Next.js.
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
@@ -138,22 +139,19 @@ export const HeroSection = () => {
               <ArrowDown className="size-4 " />
             </button>
           </Link>
-          <a href="./Aftab_Alam_Resume.pdf" download={"AFTAB_ALAM_RESUME"}>
+          <a href="/Aftab_Alam_Resume.pdf" download="Aftab_Alam_Resume.pdf">
             <button className="px-6  h-12  border border-white/15 rounded-xl  inline-flex items-center  gap-2">
               <span className="font-semibold cursor-pointer z-10">Resume</span>
               <ArrowDown className="size-4 z-10 cursor-pointer" />
             </button>
           </a>
-          <button
-            onClick={() =>
-              (window.location.href =
-                "mailto:aftabalam735530@gmail.com?subject=Hello from your portfolio&body=Hi Aftab, I came across your portfolio and would like to connect.")
-            }
+          <a
+            href="mailto:aftabalam735530@gmail.com?subject=Hello from your portfolio&body=Hi Aftab, I came across your portfolio and would like to connect."
             className="inline-flex  items-center gap-2 bg-white  text-gray-900 font-semibold border border-white cursor-pointer z-10 rounded-xl h-12 px-4 "
           >
             <span className="text-2xl">👋</span>
             <span className="font-semibold ">Let&#39;s Connect</span>
-          </button>
+          </a>
         </div>
       </div>
     </div>

@@ -5,12 +5,10 @@ const words = [
   "Event-Driven",
   "Low-Latency",
   "Distributed",
-  "Fault-Tolerant",
   "High-Concurrency",
   "Real-time",
   "Resilient",
   "Consistent",
-  "Observable",
 ];
 
 export const TapeSection = () => {
