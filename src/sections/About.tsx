@@ -4,7 +4,7 @@ import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
 
 import Image from "next/image";
-import BookImage from "../assets/images/book-cover.png";
+import BookImage from "../assets/images/book-cover.jpg";
 import JavascriptIcon from "../assets/icons/square-js.svg";
 import HTMLIcon from "../assets/icons/html5.svg";
 import CSSIcon from "../assets/icons/css3.svg";
@@ -35,14 +35,14 @@ import NginxIcon from "../assets/icons/nginx.svg";
 import AwsIcon from "../assets/icons/aws.svg";
 
 const toolboxItems = [
-  { title: "Node.js", iconType: NodeIcon },
   { title: "TypeScript", iconType: TypescriptIcon },
+  { title: "Node.js", iconType: NodeIcon },
+  { title: "Kafka", iconType: KafkaIcon },
+  { title: "Redis", iconType: RedisIcon },
+  { title: "PostgreSQL", iconType: PostgresIcon },
   { title: "Express", iconType: ExpressIcon },
   { title: "NestJS", iconType: NestjsIcon },
   { title: "Socket.IO", iconType: SocketioIcon },
-  { title: "Redis", iconType: RedisIcon },
-  { title: "Kafka", iconType: KafkaIcon },
-  { title: "PostgreSQL", iconType: PostgresIcon },
   { title: "MongoDB", iconType: MongoIcon },
   { title: "Prisma", iconType: PrismaIcon },
   { title: "Docker", iconType: DockerIcon },
@@ -69,12 +69,12 @@ const hobbies = [
     left: "50%",
     top: "10%",
   },
-  {
-    title: "Hiking",
-    emoji: "🚶",
-    left: "10%",
-    top: "35%",
-  },
+  // {
+  //   title: "Hiking",
+  //   emoji: "🚶",
+  //   left: "10%",
+  //   top: "35%",
+  // },
   {
     title: "Music",
     emoji: "🎵",
@@ -88,11 +88,23 @@ const hobbies = [
     top: "45%",
   },
   {
-    title: "Fitness",
-    emoji: "🤸‍♀️",
+    title: "System Design",
+    emoji: "🏗️",
     left: "5%",
-    top: "65%",
+    top: "70%",
   },
+  {
+    title: "Traveling",
+    emoji: "✈️",
+    left: "60%",
+    top: "70%",
+  },
+  // {
+  //   title: "Fitness",
+  //   emoji: "🤸‍♀️",
+  //   left: "5%",
+  //   top: "65%",
+  // },
 ];
 export const AboutSection = () => {
   const constraintRef = useRef(null);
@@ -106,15 +118,38 @@ export const AboutSection = () => {
           description="Learn more about who I am, what I do, and what inspires me."
         />
         <div className="mt-20 flex flex-col gap-8">
+          <Card className="p-6 md:p-8">
+            <h3 className="font-serif text-2xl md:text-3xl">My Story</h3>
+            <div className="mt-4 max-w-4xl space-y-4 text-sm leading-relaxed text-white/60 md:text-base">
+              <p>
+                I&apos;m a backend-focused full-stack developer from Lucknow,
+                now based in Noida. I started with the MERN stack, then moved
+                into backend engineering, where I got hooked on the problems
+                that appear when real users arrive: many requests at once,
+                money that has to stay correct, and real-time features that
+                have to stay in sync.
+              </p>
+              <p>
+                Outside of coding, I enjoy exploring system design concepts,
+                listening to music, and traveling. I&apos;m currently looking
+                for a backend or full-stack role where I can work on scalable,
+                distributed systems.
+              </p>
+            </div>
+          </Card>
           <div className=" grid grid-cols-1 gap-8 md:grid md:grid-cols-5  lg:grid-cols-3">
-            <Card className="h-[320px] md:col-span-2 lg:col-span-1">
+            <Card className="flex h-[320px] flex-col md:col-span-2 lg:col-span-1">
               <CardHeader
                 title="My Reads"
                 description="Explore the books shaping my perspective."
               />
 
-              <div className="w-40 mx-auto mt-2 md:mt-0">
-                <Image src={BookImage} alt="Book cover" />
+              <div className="min-h-0 flex-1 flex justify-center px-6 pb-4">
+                <Image
+                  src={BookImage}
+                  alt="Book cover"
+                  className="h-full w-auto max-w-full object-contain"
+                />
               </div>
             </Card>
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">

@@ -123,11 +123,13 @@ export const HeroSection = () => {
             Full-Stack Developer, Backend at Heart
           </h1>
           <p className="mt-4 text-center  text-white/60 md:text-lg">
-            I&#39;m a full-stack developer with 3+ years of experience, most at
-            home in backend engineering. At SDLC Corp I led 4 real-time gaming
-            and social platforms end to end, as the sole backend developer on 3
-            of them, and delivered 3. I&#39;m comfortable across the stack with
-            React and Next.js.
+            I&#39;m a full-stack developer with 2+ years of experience, most at
+            home in backend engineering. I enjoy designing scalable, distributed
+            systems and the problems that come with them: concurrency,
+            idempotency, transactions and microservice architecture. At SDLC
+            Corp I worked on real-time multiplayer gaming backends with Node.js,
+            TypeScript, PostgreSQL and Redis, and I build React and Next.js
+            interfaces when a project needs them.
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">

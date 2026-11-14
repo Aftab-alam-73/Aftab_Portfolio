@@ -9,9 +9,9 @@ const experience = [
     period: "Jan 2025 – Jul 2026",
     location: "Noida",
     points: [
-      "Led 4 real-time gaming and social platforms end to end; sole backend developer on 3 of them, and delivered 3.",
-      "Owned database design, API design, real-time services (Socket.IO, Redis pub/sub), CI/CD (Docker, GitHub Actions) and AWS deployment (EC2, S3, Lambda).",
-      "Worked with React/Next.js frontend developers to define API and socket contracts.",
+      "Built backend features for real-time multiplayer gaming apps: wallets and transactions, matchmaking, live scoring and settlement.",
+      "Designed APIs and database schemas in Node.js, TypeScript and PostgreSQL, and built real-time services with Socket.IO and Redis pub/sub.",
+      "Built admin dashboards with React, Redux and Tailwind CSS, and worked with frontend developers to agree API and socket contracts.",
     ],
   },
   {
